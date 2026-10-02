@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Chorus",
+  "version": "0.1.0",
+  "description": "Flags coordinated inauthentic activity and abuse-heavy accounts on X, and shows the evidence behind every flag.",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://x.com/*",
+    "https://twitter.com/*",
+    "http://localhost/*",
+    "http://127.0.0.1/*"
+  ],
+  "optional_host_permissions": ["https://*/*"],
+  "background": { "service_worker": "src/background.js" },
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*", "https://twitter.com/*"],
+      "js": ["src/adapters/x.js", "src/content.js"],
+      "css": ["src/badge.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": { "default_popup": "src/popup.html", "default_title": "Chorus" }
+}

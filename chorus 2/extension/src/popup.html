@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Chorus</title>
+<style>
+  :root { --bg: #fff; --fg: #111; --muted: #666; --line: #ddd; --ok: #0a7d32; --bad: #b3261e; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #16181c; --fg: #e7e9ea; --muted: #8b98a5; --line: #2f3336; --ok: #3fb950; --bad: #f85149; }
+  }
+  body { margin: 0; width: 300px; background: var(--bg); color: var(--fg); font: 13px/1.4 system-ui, sans-serif; }
+  main { padding: 14px 16px; }
+  h1 { font-size: 15px; margin: 0 0 2px; }
+  p.sub { margin: 0 0 12px; color: var(--muted); }
+  label { display: flex; gap: 8px; align-items: flex-start; margin: 8px 0; }
+  label.col { flex-direction: column; gap: 4px; }
+  input[type=text] { width: 100%; box-sizing: border-box; padding: 5px 7px; border: 1px solid var(--line); border-radius: 6px; background: transparent; color: inherit; }
+  .hint { color: var(--muted); font-size: 12px; }
+  .row { display: flex; gap: 8px; margin-top: 12px; }
+  button { flex: 1; padding: 6px; border-radius: 6px; border: 1px solid var(--line); background: transparent; color: inherit; cursor: pointer; }
+  #status { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line); font-size: 12px; }
+  .ok { color: var(--ok); } .bad { color: var(--bad); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Chorus</h1>
+  <p class="sub">Flags coordinated and abusive accounts, with the evidence.</p>
+
+  <label><input type="checkbox" id="enabled"> <span>Show labels on X</span></label>
+  <label><input type="checkbox" id="contribute">
+    <span>Share what I see<br><span class="hint">Public posts on your screen are sent to the backend below so it can find clusters. Nothing else leaves your browser.</span></span>
+  </label>
+  <label><input type="checkbox" id="collapseFlagged"> <span>Blur replies from high-level flagged accounts</span></label>
+  <label><input type="checkbox" id="testMode">
+    <span>Test mode<br><span class="hint">Puts a grey test badge on your own posts, a green dot on every post Chorus has read, and a status box in the corner of X. Only visible to you.</span></span>
+  </label>
+  <label class="col"><span>Your X handle <span class="hint">(optional, detected automatically)</span></span><input type="text" id="testHandle" spellcheck="false" placeholder="@yourhandle"></label>
+  <label class="col"><span>Backend URL</span><input type="text" id="backendUrl" spellcheck="false"></label>
+
+  <div class="row">
+    <button id="save">Save</button>
+    <button id="analyze">Re-analyze now</button>
+  </div>
+  <div id="status">Checking backend…</div>
+</main>
+<script src="popup.js"></script>
+</body>
+</html>

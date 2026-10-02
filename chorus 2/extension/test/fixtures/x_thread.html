@@ -1,0 +1,42 @@
+<!doctype html>
+<!-- Reduced copy of X's thread markup: only the attributes the adapter relies on. -->
+<html><body>
+<nav><a data-testid="AppTabBar_Profile_Link" href="/quoter" role="link">Profile</a></nav>
+<main>
+<article data-testid="tweet">
+  <div data-testid="User-Name">
+    <a role="link" href="/Pol_A"><span>Politician A</span></a>
+    <a role="link" href="/Pol_A"><span>@Pol_A</span></a>
+    <a role="link" href="/Pol_A/status/100"><time datetime="2026-09-01T10:00:00.000Z">10:00</time></a>
+  </div>
+  <div data-testid="tweetText"><span>Budget announcement today </span><img alt="🇮🇳" src="x.png"></div>
+  <div role="group" aria-label="1,204 replies, 3.1K reposts, 12K likes, 40 bookmarks, 1.2M views"></div>
+</article>
+
+<article data-testid="tweet">
+  <div data-testid="User-Name">
+    <a role="link" href="/abcde12345678"><span>Bot One</span></a>
+    <a role="link" href="/abcde12345678/status/101"><time datetime="2026-09-01T10:05:00.000Z">10:05</time></a>
+  </div>
+  <div data-testid="tweetText"><span>they will never tell you this but the numbers do not lie</span></div>
+</article>
+
+<article data-testid="tweet">
+  <div data-testid="User-Name">
+    <a role="link" href="/quoter"><span>Quoter</span></a>
+    <a role="link" href="/quoter/status/102"><time datetime="2026-09-01T10:06:00.000Z">10:06</time></a>
+  </div>
+  <div role="link" tabindex="0">
+    <div data-testid="User-Name">
+      <a role="link" href="/someone_else"><span>Someone</span></a>
+      <a role="link" href="/someone_else/status/55"><time datetime="2026-08-01T10:06:00.000Z">Aug 1</time></a>
+    </div>
+    <div data-testid="tweetText"><span>quoted text must not be attributed to the quoter</span></div>
+  </div>
+</article>
+
+<article data-testid="tweet">
+  <div data-testid="User-Name"><a role="link" href="/advertiser"><span>Advertiser</span></a></div>
+  <div data-testid="tweetText"><span>Promoted post without a timestamp link</span></div>
+</article>
+</main></body></html>

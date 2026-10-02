@@ -1,0 +1,150 @@
+{
+  "threshold_0.5": {
+    "overall": {
+      "n": 34164,
+      "positive_rate": 0.507,
+      "precision": 0.867,
+      "recall": 0.841,
+      "f1": 0.854,
+      "macro_f1": 0.854,
+      "avg_precision": 0.939
+    },
+    "hatexplain": {
+      "n": 1924,
+      "positive_rate": 0.594,
+      "precision": 0.805,
+      "recall": 0.817,
+      "f1": 0.811,
+      "macro_f1": 0.765,
+      "avg_precision": 0.887
+    },
+    "macd-hindi": {
+      "n": 6728,
+      "positive_rate": 0.52,
+      "precision": 0.857,
+      "recall": 0.835,
+      "f1": 0.846,
+      "macro_f1": 0.842,
+      "avg_precision": 0.934
+    },
+    "macd-kannada": {
+      "n": 6587,
+      "positive_rate": 0.479,
+      "precision": 0.883,
+      "recall": 0.812,
+      "f1": 0.846,
+      "macro_f1": 0.857,
+      "avg_precision": 0.936
+    },
+    "macd-malyalam": {
+      "n": 5170,
+      "positive_rate": 0.447,
+      "precision": 0.833,
+      "recall": 0.83,
+      "f1": 0.831,
+      "macro_f1": 0.848,
+      "avg_precision": 0.919
+    },
+    "macd-tamil": {
+      "n": 6000,
+      "positive_rate": 0.466,
+      "precision": 0.87,
+      "recall": 0.832,
+      "f1": 0.851,
+      "macro_f1": 0.863,
+      "avg_precision": 0.935
+    },
+    "macd-telugu": {
+      "n": 6000,
+      "positive_rate": 0.532,
+      "precision": 0.905,
+      "recall": 0.881,
+      "f1": 0.893,
+      "macro_f1": 0.888,
+      "avg_precision": 0.966
+    },
+    "trac-hindi": {
+      "n": 1755,
+      "positive_rate": 0.693,
+      "precision": 0.88,
+      "recall": 0.9,
+      "f1": 0.89,
+      "macro_f1": 0.815,
+      "avg_precision": 0.952
+    }
+  },
+  "threshold_0.8": {
+    "overall": {
+      "n": 34164,
+      "positive_rate": 0.507,
+      "precision": 0.945,
+      "recall": 0.674,
+      "f1": 0.787,
+      "macro_f1": 0.812,
+      "avg_precision": 0.939
+    },
+    "hatexplain": {
+      "n": 1924,
+      "positive_rate": 0.594,
+      "precision": 0.898,
+      "recall": 0.572,
+      "f1": 0.699,
+      "macro_f1": 0.707,
+      "avg_precision": 0.887
+    },
+    "macd-hindi": {
+      "n": 6728,
+      "positive_rate": 0.52,
+      "precision": 0.94,
+      "recall": 0.658,
+      "f1": 0.774,
+      "macro_f1": 0.797,
+      "avg_precision": 0.934
+    },
+    "macd-kannada": {
+      "n": 6587,
+      "positive_rate": 0.479,
+      "precision": 0.959,
+      "recall": 0.668,
+      "f1": 0.787,
+      "macro_f1": 0.821,
+      "avg_precision": 0.936
+    },
+    "macd-malyalam": {
+      "n": 5170,
+      "positive_rate": 0.447,
+      "precision": 0.922,
+      "recall": 0.639,
+      "f1": 0.755,
+      "macro_f1": 0.803,
+      "avg_precision": 0.919
+    },
+    "macd-tamil": {
+      "n": 6000,
+      "positive_rate": 0.466,
+      "precision": 0.943,
+      "recall": 0.667,
+      "f1": 0.781,
+      "macro_f1": 0.819,
+      "avg_precision": 0.935
+    },
+    "macd-telugu": {
+      "n": 6000,
+      "positive_rate": 0.532,
+      "precision": 0.966,
+      "recall": 0.762,
+      "f1": 0.852,
+      "macro_f1": 0.859,
+      "avg_precision": 0.966
+    },
+    "trac-hindi": {
+      "n": 1755,
+      "positive_rate": 0.693,
+      "precision": 0.944,
+      "recall": 0.681,
+      "f1": 0.791,
+      "macro_f1": 0.741,
+      "avg_precision": 0.952
+    }
+  }
+}

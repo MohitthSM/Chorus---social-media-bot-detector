@@ -1,0 +1,12 @@
+{
+  "name": "chorus-extension",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Chorus browser extension (Manifest V3). No build step: load this folder unpacked.",
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "devDependencies": {
+    "jsdom": "^25.0.0"
+  }
+}
